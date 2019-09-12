@@ -1,26 +1,18 @@
-<app-cabecera titulo="alert"></app-cabecera>
+<app-cabecera [titulo]="titulo"></app-cabecera>
 
-<ion-content padding="true">
-    <button class="button button-dark" ng-click="showAlert()">Sample Alert</button>
-  </ion-content>
+<ion-content padding>
 
-  <script>
-  angular.module('ionic.example', ['ionic'])
+  <ion-button expand="full" color="warning" (click)="presentAlert()">
+  Alerta basica <ion-icon class="ion-padding" name="alert"></ion-icon>
+  </ion-button>
 
-.controller('PopupCtrl', function($scope, $timeout, $q, $ionicPopup) {
+  <ion-button expand="full" color="danger" (click)="presentAlertConfirm()">
+      Alerta de Confirmacion <ion-icon class="ion-padding" name="flag"></ion-icon>
+      </ion-button>
 
-          $scope.showAlert = function() {
-            $ionicPopup.alert({
-              title: 'Success',
-              subTitle: 'Neque porro quisquam',
-              cssClass: 'popup-dark',
-              scope: $scope,
-              template: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc purus sem, porttitor nec semper sollicitudin, pulvinar fringilla sem. Aenean semper imperdiet rhoncus.',
-              okType: 'button-balanced'
-            }).then(function(res) {
-              console.log('Test Alert Box');
-            });
-          };
+      <ion-button expand="full" color="primary" (click)="presentAlertPrompt()">
+          Alerta de Formulario <ion-icon class="ion-padding" name="clipboard"></ion-icon>
+          </ion-button>    
   
-});
-  </script>
+
+  </ion-content>  

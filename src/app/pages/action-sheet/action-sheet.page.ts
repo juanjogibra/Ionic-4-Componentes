@@ -15,8 +15,10 @@ export class ActionSheetPage implements OnInit {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
+      backdropDismiss: false,     
       header: 'Albums',
       buttons: [{
+        cssClass: 'rojo',
         text: 'Delete',
         role: 'destructive',
         icon: 'trash',
