@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list *ngFor="let c of componentes">
+        <ion-item [routerLink]="c.path" detail>
+          <ion-label>{{c.name}}</ion-label>
+          <ion-icon [name] = "c.icon" slot="start"></ion-icon>
+        </ion-item>
+      </ion-list>    
+  
+  <ion-button routerLink="/alert">Alert</ion-button>
+
+  <ion-button routerLink="/action-sheet">Action-sheet</ion-button>
+</ion-content>
