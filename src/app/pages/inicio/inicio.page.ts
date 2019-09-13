@@ -17,6 +17,16 @@ export class InicioPage implements OnInit {
       icon:"appstore",
       name: "Action-Sheet",
       path: "/action-sheet"
+    },
+    {
+      icon:"beaker",
+      name: "Avatar",
+      path: "/avatar"
+    },
+    {
+      icon:"football",
+      name: "Botones",
+      path: "/botones"
     }
   ]
 

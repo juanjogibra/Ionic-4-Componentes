@@ -8,7 +8,7 @@ import { AlertController, ToastController } from '@ionic/angular';
 })
 export class AlertPage implements OnInit {
 
-  titulo: string = "alert"
+  titulo: string = "Alert"
 
 
   constructor(private alertController: AlertController, private toastController: ToastController) { }

@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>botones</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text="volver"
+      ></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- botones estandar -->
+
+  <ion-button
+    size="small"
+    expand="full"
+    (click)="onClick('pulsase el pequeño')"
+  >Small</ion-button>
+
+  <ion-button
+    expand="full"
+    (click)="onClick('pulsaste el mediano')"
+  >Default</ion-button>
+
+  <ion-button
+    size="large"
+    expand="full"
+    (click)="onClick('pulsaste el grande')"
+  >Large</ion-button>
+
+  <hr>
+  <!-- anchor -->
+
+  <ion-button
+    expand="full"
+    routerLink="/action-sheet"
+    color="tertiary"
+  >Go Action-Sheet</ion-button>
+
+  <ion-row>
+    <ion-col>
+      <ion-button
+        expand="full"
+        routerLink="/alert"
+        color="tertiary"
+      >Go Alert</ion-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-button
+        expand="full"
+        routerLink="/avatar"
+        color="tertiary"
+      >Go Avatar</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <!-- Fill -->
+<hr>
+
+  <ion-button fill="clear">Clear</ion-button>
+  <ion-button fill ="outline">Outline</ion-button>
+  <ion-button fill="solid">Solid</ion-button>
+
+</ion-content>
