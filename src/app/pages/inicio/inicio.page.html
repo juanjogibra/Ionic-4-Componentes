@@ -19,12 +19,12 @@
     </ion-item>
   </ion-list>
 
-  <ion-button routerLink="/alert">Alert</ion-button>
+  <hr>
 
-  <ion-button routerLink="/action-sheet">Action-sheet</ion-button>
-
-  <ion-button routerLink="/avatar">Avatar</ion-button>
-
-  <ion-button routerLink="/botones">Botones</ion-button>
-
+  <div style="overflow-x: scroll; white-space: nowrap;">
+    <ion-button
+      *ngFor="let c of componentes"
+      [routerLink]="c.path"
+    >{{c.name}}</ion-button>
+  </div>
 </ion-content>

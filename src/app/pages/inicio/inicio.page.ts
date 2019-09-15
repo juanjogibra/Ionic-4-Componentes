@@ -27,6 +27,11 @@ export class InicioPage implements OnInit {
       icon:"football",
       name: "Botones",
       path: "/botones"
+    },
+    {
+      icon:"card",
+      name: "Tarjetas",
+      path: "/tarjetas"
     }
   ]
 
