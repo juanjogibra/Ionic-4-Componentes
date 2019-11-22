@@ -15,7 +15,7 @@ export class ActionSheetPage implements OnInit {
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
-      backdropDismiss: false,     
+      backdropDismiss: false,   //evita que al pulsar sobre cualquier parte de la pantalla, se cierre el action-sheet  
       header: 'Albums',
       buttons: [{
         cssClass: 'rojo',
