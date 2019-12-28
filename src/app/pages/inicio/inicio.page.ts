@@ -37,6 +37,16 @@ export class InicioPage implements OnInit {
       icon:"checkmark-circle-outline",
       name: "Checkbox",
       path: "/check"
+    },
+    {
+      icon:"calendar",
+      name: "Date-Time",
+      path: "/date-time"
+    },
+    {
+      icon:"car",
+      name: "Fabs",
+      path: "/fab"
     }
   ]
 
